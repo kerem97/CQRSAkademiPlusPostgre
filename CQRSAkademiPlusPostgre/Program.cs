@@ -18,6 +18,10 @@ builder.Services.AddScoped<GetEmployeeByIDQueryHandler>();
 builder.Services.AddScoped<CreateEmployeeCommandHandler>();
 builder.Services.AddScoped<RemoveEmployeeCommandHandler>();
 
+
+builder.Services.AddScoped<GetProductQueryHandler>();
+builder.Services.AddScoped<CreateProductCommandHandler>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

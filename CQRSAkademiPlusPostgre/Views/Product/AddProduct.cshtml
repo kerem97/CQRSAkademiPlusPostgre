@@ -1,0 +1,44 @@
+﻿@model CreateProductCommand
+@{
+    Layout = null;
+}
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container">
+    <form method="post">
+        <label>Ürün Adı</label>
+        <input type="text" class="form-control" asp-for="ProductName" />
+        <br />
+        <label>Marka</label>
+        <input type="text" class="form-control" asp-for="ProductBrand" />
+        <br />
+        <label>Kategori</label>
+        <input type="text" class="form-control" asp-for="ProductCategory" />
+        <br />
+        <label>Fiyat</label>
+        <input type="text" class="form-control" asp-for="ProductPrice" />
+        <br />
+        <label>Ürün Stok</label>
+        <input type="text" class="form-control" asp-for="ProductStock" />
+        <br />
+        <label>Ürün Stok Türü</label>
+        <input type="text" class="form-control" asp-for="ProductStockType" />
+        <br />
+        <label>Raf No</label>
+        <input type="text" class="form-control" asp-for="ShelfNumber" />
+        <br />
+        <label>Barkod</label>
+        <input type="text" class="form-control" asp-for="Barcode" />
+        <br />
+        <label>Vergi</label>
+        <input type="text" class="form-control" asp-for="Tax" />
+        <br />
+        <label>STT</label>
+        <input type="text" class="form-control" asp-for="LastUseDate" />
+        <br />
+        <label>Distribütör</label>
+        <input type="text" class="form-control" asp-for="Publisher" />
+        <br />
+        <button class="btn btn-outline-primary">Ekle</button>
+    </form>
+</div>
