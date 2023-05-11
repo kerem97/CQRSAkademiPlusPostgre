@@ -1,0 +1,44 @@
+﻿@model GetProductByIDQueryResult
+@{
+    Layout = null;
+}
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<div class="container">
+    <br />
+    <label>Ürün ID</label>
+    <input type="text" class="form-control" asp-for="ProductID" />
+    <br />
+    <label>Ürün Adı</label>
+    <input type="text" class="form-control" asp-for="ProductName" />
+    <br />
+    <label>Marka</label>
+    <input type="text" class="form-control" asp-for="ProductBrand" />
+    <br />
+    <label>Kategori</label>
+    <input type="text" class="form-control" asp-for="ProductCategory" />
+    <br />
+    <label>Stok</label>
+    <input type="text" class="form-control" asp-for="ProductStock" />
+    <br />
+    <label>Stok Türü</label>
+    <input type="text" class="form-control" asp-for="ProductStockType" />
+    <br />
+    <label>Fiyat</label>
+    <input type="text" class="form-control" asp-for="ProductPrice" />
+    <br />
+    <label>Raf</label>
+    <input type="text" class="form-control" asp-for="ShelfNumber" />
+    <br />
+    <label>Barkod</label>
+    <input type="text" class="form-control" asp-for="Barcode" />
+    <br />
+    <label>Kategori</label>
+    <input type="text" class="form-control" asp-for="ProductCategory" />
+    <br />
+    <label>Distrübütör</label>
+    <input type="text" class="form-control" asp-for="Publisher" />
+    <br />
+    <label>STT</label>
+    <input type="text" class="form-control" asp-for="LastUseDate" />
+    <br />
+</div>

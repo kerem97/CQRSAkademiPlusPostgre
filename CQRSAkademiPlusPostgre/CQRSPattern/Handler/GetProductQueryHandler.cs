@@ -15,6 +15,7 @@ namespace CQRSAkademiPlusPostgre.CQRSPattern.Handler
         {
             var values = _context.Products.Select(x => new GetProductQueryResult
             {
+                ProductID = x.ProductID,
                 ProductName=x.ProductName,
                 ProductPrice=x.ProductPrice,
                 ProductCategory=x.ProductCategory,
