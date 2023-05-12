@@ -1,0 +1,29 @@
+﻿@model MediatorAkademiPlusPostgre.MediatorDesignPattern.Commands.CreateProductCommand
+
+@{
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<br />
+<div class="container">
+    <br />
+    <form method="post">
+        <label>Ürün Adı</label>
+        <input type="text" class="form-control" asp-for="ProductName" />
+        <br />
+        <label>Marka</label>
+        <input type="text" class="form-control" asp-for="ProductBrand" />
+        <br />
+        <label>Stok</label>
+        <input type="text" class="form-control" asp-for="ProductStock" />
+        <br />
+        <label>Fiyat</label>
+        <input type="text" class="form-control" asp-for="ProductPrice" />
+        <br />
+        <label>Kategori</label>
+        <input type="text" class="form-control" asp-for="CategoryID" />
+        <br />
+        <button class="btn btn-outline-success">Ürün Ekle</button>
+    </form>
+</div>

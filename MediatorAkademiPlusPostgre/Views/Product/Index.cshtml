@@ -1,0 +1,37 @@
+﻿@model List<MediatorAkademiPlusPostgre.MediatorDesignPattern.Results.GetAllProductQueryResult>
+@{
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<br />
+<div class="container">
+
+
+    <table class="table table-bordered">
+        <tr>
+            <th>#</th>
+            <th>Ürün Adı</th>
+            <th>Marka</th>
+            <th>Stok</th>
+            <th>Fiyat</th>
+            <th>Sil</th>
+            <th>Güncelle</th>
+        </tr>
+        @foreach (var x in Model)
+        {
+            <tr>
+                <td>@x.ProductID</td>
+                <td>@x.ProductName</td>
+                <td>@x.ProductBrand</td>
+                <td>@x.ProductStock</td>
+                <td>@x.ProductPrice</td>
+                <td><a href="/Product/DeleteProduct/@x.ProductID/" class="btn btn-outline-danger">Sil</a></td>
+                <td><a href="/Product/UpdateProduct/@x.ProductID/" class="btn btn-outline-primary">Güncelle</a></td>
+            </tr>
+        }
+
+    </table>
+
+    <a href="/Product/AddProduct/" class="btn btn-outline-info">Yeni Ürün Ekle</a>
+</div>

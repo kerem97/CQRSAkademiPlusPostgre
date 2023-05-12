@@ -18,6 +18,8 @@ builder.Services.AddScoped<GetEmployeeByIDQueryHandler>();
 builder.Services.AddScoped<CreateEmployeeCommandHandler>();
 builder.Services.AddScoped<RemoveEmployeeCommandHandler>();
 builder.Services.AddScoped<GetEmployeeUpdateByIDQueryHandler>();
+builder.Services.AddScoped<UpdateEmployeeCommandHandler>();
+
 
 
 builder.Services.AddScoped<GetProductQueryHandler>();
